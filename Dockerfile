@@ -1,2 +1,2 @@
-FROM smartfoxserver/sfs2x:latest
+FROM brentjohnson/docker-smartfoxserver:latest
 EXPOSE 8080
