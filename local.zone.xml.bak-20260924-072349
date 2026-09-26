@@ -1,0 +1,280 @@
+﻿<zone>
+  <name>local</name>
+  <isCustomLogin>true</isCustomLogin>
+  <isForceLogout>true</isForceLogout>
+  <applyWordsFilterToUserName>true</applyWordsFilterToUserName>
+  <applyWordsFilterToRoomName>true</applyWordsFilterToRoomName>
+  <applyWordsFilterToPrivateMessages>true</applyWordsFilterToPrivateMessages>
+  <isFilterBuddyMessages>true</isFilterBuddyMessages>
+  <isEncrypted>false</isEncrypted>
+  <maxUsers>1000</maxUsers>
+  <maxUserVariablesAllowed>50</maxUserVariablesAllowed>
+  <maxRoomVariablesAllowed>20</maxRoomVariablesAllowed>
+  <minRoomNameChars>3</minRoomNameChars>
+  <maxRoomNameChars>20</maxRoomNameChars>
+  <maxRooms>500</maxRooms>
+  <maxRoomsCreatedPerUser>3</maxRoomsCreatedPerUser>
+  <userCountChangeUpdateInterval>1000</userCountChangeUpdateInterval>
+  <userReconnectionSeconds>0</userReconnectionSeconds>
+  <overrideMaxUserIdleTime>120</overrideMaxUserIdleTime>
+  <maxFailedLogins>4</maxFailedLogins>
+  <allowGuestUsers>true</allowGuestUsers>
+  <guestUserNamePrefix>Guest#</guestUserNamePrefix>
+  <publicRoomGroups>default</publicRoomGroups>
+  <defaultRoomGroups>default</defaultRoomGroups>
+  <allowInvitationsOnlyForBuddies>false</allowInvitationsOnlyForBuddies>
+  <maxUsersPerJoinInvitationRequest>5</maxUsersPerJoinInvitationRequest>
+  <geoLocationEnabled>false</geoLocationEnabled>
+
+  <wordsFilter active="false">
+    <useWarnings>false</useWarnings>
+    <warningsBeforeKick>3</warningsBeforeKick>
+    <kicksBeforeBan>2</kicksBeforeBan>
+    <banDuration>1440</banDuration>
+    <maxBadWordsPerMessage>0</maxBadWordsPerMessage>
+    <kicksBeforeBanMinutes>3</kicksBeforeBanMinutes>
+    <secondsBeforeBanOrKick>5</secondsBeforeBanOrKick>
+    <warningMessage>Stop swearing or you will be banned</warningMessage>
+    <kickMessage>Swearing not allowed: you are being kicked</kickMessage>
+    <banMessage>Too much swearing: you are banned</banMessage>
+    <wordsFile>config/default.words.txt</wordsFile>
+    <filterMode>BLACKLIST</filterMode>
+    <banMode>NAME</banMode>
+    <hideBadWordWithCharacter>*</hideBadWordWithCharacter>
+  </wordsFilter>
+
+  <floodFilter active="false">
+    <banDurationMinutes>1440</banDurationMinutes>
+    <maxFloodingAttempts>5</maxFloodingAttempts>
+    <secondsBeforeBan>5</secondsBeforeBan>
+    <banMode>NAME</banMode>
+    <logFloodingAttempts>true</logFloodingAttempts>
+    <banMessage>Too much flooding, you are banned</banMessage>
+  </floodFilter>
+
+  <rooms>
+    <room>
+      <name>w1#street01</name>
+      <groupId>default</groupId>
+      <password></password>
+      <maxUsers>20</maxUsers>
+      <maxSpectators>0</maxSpectators>
+      <isDynamic>false</isDynamic>
+      <isGame>false</isGame>
+      <isHidden>false</isHidden>
+      <autoRemoveMode>DEFAULT</autoRemoveMode>
+      <permissions>
+        <flags>PASSWORD_STATE_CHANGE,PUBLIC_MESSAGES,ROOM_NAME_CHANGE,CAPACITY_CHANGE</flags>
+        <maxRoomVariablesAllowed>10</maxRoomVariablesAllowed>
+      </permissions>
+      <events>USER_ENTER_EVENT,USER_EXIT_EVENT,USER_COUNT_CHANGE_EVENT,USER_VARIABLES_UPDATE_EVENT</events>
+      <badWordsFilter isActive="false"/>
+      <roomVariables>
+        <variable>
+          <name>extensions</name>
+          <value>[]</value>
+          <type>STRING</type>
+          <isPrivate>false</isPrivate>
+          <isPersistent>false</isPersistent>
+          <isGlobal>false</isGlobal>
+          <isHidden>false</isHidden>
+          <isStorable>true</isStorable>
+        </variable>
+        <variable>
+          <name>doors</name>
+          <value>[{"key":"d5","targetDir":5,"targetX":4,"targetY":18,"property":{"doorKey":"d1","roles":"","roomKey":"street03","cn":"PassageProperty"},"primary":true},{"key":"d6","targetDir":1,"targetX":46,"targetY":18,"property":{"doorKey":"d1","roles":"","roomKey":"street02","cn":"PassageProperty"},"primary":false}]</value>
+          <type>STRING</type>
+          <isPrivate>false</isPrivate>
+          <isPersistent>false</isPersistent>
+          <isGlobal>false</isGlobal>
+          <isHidden>false</isHidden>
+          <isStorable>true</isStorable>
+        </variable>
+        <variable>
+          <name>bots</name>
+          <value>[{"key":"giftStandNew","height":6,"width":2,"length":1,"posX":35,"posY":24,"ver":0,"atlas":0,"property":{"cn":"ShopPanelProperty","shopID":21,"revenueShare":"0"},"speechProperty":{"cn":"SpeechProperty","list":[{"event":"casual","message":" YAHOO CITY","$$hashKey":"object:22526"},{"event":"welcome","message":"Welcome to Yahoo City!","$$hashKey":"object:4957"}]}}]</value>
+          <type>STRING</type>
+          <isPrivate>false</isPrivate>
+          <isPersistent>false</isPersistent>
+          <isGlobal>false</isGlobal>
+          <isHidden>false</isHidden>
+          <isStorable>true</isStorable>
+        </variable>
+        <variable>
+          <name>roomKey</name>
+          <value>street01</value>
+          <type>STRING</type>
+          <isPrivate>false</isPrivate>
+          <isPersistent>false</isPersistent>
+          <isGlobal>false</isGlobal>
+          <isHidden>false</isHidden>
+          <isStorable>true</isStorable>
+        </variable>
+        <variable>
+          <name>width</name>
+          <value>800</value>
+          <type>INT</type>
+          <isPrivate>false</isPrivate>
+          <isPersistent>false</isPersistent>
+          <isGlobal>false</isGlobal>
+          <isHidden>false</isHidden>
+          <isStorable>true</isStorable>
+        </variable>
+        <variable>
+          <name>height</name>
+          <value>515</value>
+          <type>INT</type>
+          <isPrivate>false</isPrivate>
+          <isPersistent>false</isPersistent>
+          <isGlobal>false</isGlobal>
+          <isHidden>false</isHidden>
+          <isStorable>true</isStorable>
+        </variable>
+      </roomVariables>
+      <mmoSettings>
+        <isActive>false</isActive>
+        <defaultAOI>100,100,0</defaultAOI>
+        <lowerMapLimit></lowerMapLimit>
+        <higherMapLimit></higherMapLimit>
+        <forceFloats>false</forceFloats>
+        <userMaxLimboSeconds>50</userMaxLimboSeconds>
+        <proximityListUpdateMillis>500</proximityListUpdateMillis>
+        <sendAOIEntryPoint>true</sendAOIEntryPoint>
+      </mmoSettings>
+      <allowOwnerInvitation>true</allowOwnerInvitation>
+      <suppressUserList>false</suppressUserList>
+    </room>
+  </rooms>
+
+  <disabledSystemEvents/>
+
+  <privilegeManager active="true">
+    <profiles>
+      <profile id="0">
+        <name>Guest</name>
+        <deniedRequests class="java.util.Arrays$ArrayList">
+          <a class="string-array">
+            <string>CreateRoom</string>
+            <string>PrivateMessage</string>
+            <string>SetRoomVariables</string>
+            <string>SetUserVariables</string>
+            <string>ChangeRoomName</string>
+            <string>ChangeRoomPassword</string>
+            <string>ChangeRoomCapacity</string>
+            <string>InitBuddyList</string>
+            <string>AddBuddy</string>
+            <string>BlockBuddy</string>
+            <string>RemoveBuddy</string>
+            <string>SetBuddyVariables</string>
+            <string>GoOnline</string>
+            <string>BuddyMessage</string>
+            <string>ModeratorMessage</string>
+            <string>AdminMessage</string>
+            <string>KickUser</string>
+            <string>BanUser</string>
+          </a>
+        </deniedRequests>
+        <permissionFlags/>
+      </profile>
+      <profile id="1">
+        <name>Standard</name>
+        <deniedRequests class="java.util.Arrays$ArrayList">
+          <a class="string-array">
+            <string>ModeratorMessage</string>
+            <string>AdminMessage</string>
+            <string>KickUser</string>
+            <string>BanUser</string>
+            <string>SetRoomVariables</string>
+            <string>SetBuddyVariables</string>
+            <string>CreateSFSGame</string>
+          </a>
+        </deniedRequests>
+        <permissionFlags class="java.util.Arrays$ArrayList">
+          <a class="string-array">
+            <string>ExtensionCalls</string>
+          </a>
+        </permissionFlags>
+      </profile>
+      <profile id="2">
+        <name>Moderator</name>
+        <deniedRequests class="java.util.Arrays$ArrayList">
+          <a class="string-array">
+            <string>AdminMessage</string>
+          </a>
+        </deniedRequests>
+        <permissionFlags class="java.util.Arrays$ArrayList">
+          <a class="string-array">
+            <string>ExtensionCalls</string>
+            <string>SuperUser</string>
+          </a>
+        </permissionFlags>
+      </profile>
+      <profile id="3">
+        <name>Administrator</name>
+        <deniedRequests/>
+        <permissionFlags class="java.util.Arrays$ArrayList">
+          <a class="string-array">
+            <string>ExtensionCalls</string>
+            <string>SuperUser</string>
+          </a>
+        </permissionFlags>
+      </profile>
+      <profile id="6">
+        <name>avatarcreate</name>
+        <deniedRequests class="java.util.Arrays$ArrayList">
+          <a class="string-array">
+            <string>PublicMessage</string>
+            <string>SetRoomVariables</string>
+          </a>
+        </deniedRequests>
+        <permissionFlags class="java.util.Arrays$ArrayList">
+          <a class="string-array">
+            <string>ExtensionCalls</string>
+          </a>
+        </permissionFlags>
+      </profile>
+    </profiles>
+  </privilegeManager>
+
+  <extension>
+    <name>ConfigExtension</name>
+    <type>JAVA</type>
+    <file>com.sanalika.ConfigExtension</file>
+    <propertiesFile></propertiesFile>
+    <reloadMode>AUTO</reloadMode>
+  </extension>
+
+  <buddyList active="false">
+    <allowOfflineBuddyVariables>true</allowOfflineBuddyVariables>
+    <maxItemsPerList>100</maxItemsPerList>
+    <maxBuddyVariables>15</maxBuddyVariables>
+    <offlineBuddyVariablesCacheSize>500</offlineBuddyVariablesCacheSize>
+    <customStorageClass></customStorageClass>
+    <useTempBuddies>true</useTempBuddies>
+    <buddyStates class="java.util.Arrays$ArrayList">
+      <a class="string-array">
+        <string>Available</string>
+        <string>Away</string>
+        <string>Occupied</string>
+      </a>
+    </buddyStates>
+    <badWordsFilter isActive="false"/>
+  </buddyList>
+
+  <databaseManager active="false">
+    <driverName></driverName>
+    <connectionString></connectionString>
+    <userName></userName>
+    <password></password>
+    <testSql></testSql>
+    <maxActiveConnections>10</maxActiveConnections>
+    <maxIdleConnections>10</maxIdleConnections>
+    <exhaustedPoolAction>FAIL</exhaustedPoolAction>
+    <blockTime>3000</blockTime>
+  </databaseManager>
+
+  <maxFindUserResults>50</maxFindUserResults>
+  <maxFindRoomResults>50</maxFindRoomResults>
+  <allowUploads>false</allowUploads>
+  <lagMonitorKeepAlive>false</lagMonitorKeepAlive>
+</zone>
